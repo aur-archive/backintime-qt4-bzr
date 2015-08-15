@@ -1,0 +1,34 @@
+pkgbase = backintime-qt4-bzr
+	pkgdesc = Simple backup/snapshot system inspired by Flyback and TimeVault ('experimental' development branch)
+	pkgver = r936
+	pkgrel = 1
+	url = http://backintime.le-web.org
+	arch = any
+	license = GPL
+	makedepends = bzr
+	depends = rsync
+	depends = openssh
+	depends = python-dbus
+	depends = libnotify
+	depends = python-pyqt4
+	optdepends = cron: scheduled backups
+	optdepends = encfs: encrypted filesystems
+	optdepends = gksu: run as root
+	optdepends = kdesu: run as root
+	optdepends = meld: diff tool
+	optdepends = kompare: diff tool
+	optdepends = pm-utils: power management status check
+	optdepends = python-keyring: store passwords
+	optdepends = python-secretstorage: store passwords
+	optdepends = sshfs: remote filesystems
+	provides = backintime
+	provides = backintime-qt4
+	conflicts = backintime
+	conflicts = backintime-qt4
+	conflicts = backintime-gnome
+	conflicts = backintime-gtk
+	conflicts = backintime-kde4
+	source = backintime-qt4-bzr::bzr+https://code.launchpad.net/~bit-team/backintime/Qt4
+
+pkgname = backintime-qt4-bzr
+
